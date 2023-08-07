@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #eec7c7;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+   
+  #failBadge{
+    background-color: rgb(230, 3, 3); 
+    color:white
+  }
+
+  h2 {
+    color: #0066cc;
+  }
+  
+  table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+ 
+  
+   

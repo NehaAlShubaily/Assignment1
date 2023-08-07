@@ -1,0 +1,23 @@
+
+
+<h2>Student Marks</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>MARKS (out of 100)</th>
+      <th>PASS/FAIL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students" [ngClass]="{'fail': student.marks < 50, 'pass': student.marks >= 50}">
+      <td>{{ student.name }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.marks }}</td>
+      <td  *ngIf="student.marks >= 50; else failBadge" style="background-color: green; color:white">PASS</td>
+      <ng-template #failBadge ><p style="background-color: red; color:white">FAIL</p></ng-template>
+    </tr>
+  </tbody>
+</table>
